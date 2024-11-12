@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>My Projects | Sachith Akkadka</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Body and Container Styling */
+        body {
+            background-color: #222222;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+        .nav-container {
+            display: flex;
+            margin-bottom: 0px;
+        }
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            gap: 0px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3;
+            border-radius: 2000px;
+        }
+
+        /* Project Section */
+        #projects h1 {
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+
+        /* Project Grid Styling */
+        .projects-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            background-color: #444444;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(50% - 20px); /* 50% width minus gap */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+        }
+
+        .project-card .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-card .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-card {
+                width: 100%;
+            }
+        }
+        .sachith{
+            font-size: 40px;
+        }
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-container">
+        <ul class="nav-links">
+            <li><a href="index.html"><span class="material-icons">home</span></a></li>
+        </ul>
+    </nav>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="sachith">
+            <h1>My Projects</h1>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h2>Rural Connect</h2>
+                    <p>
+                        A platform that connects skilled rural job seekers with potential employers in the agriculture sector. It offers features like job postings, profile creation, and skill development resources.
+                    </p>
+                    <a href="https://github.com/sachithakkadka/rural-connect" target="_blank" class="btn">View on GitHub</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h2>AI Chatbot</h2>
+                    <p>
+                        Developed an AI-powered chatbot during a hackathon, which was recognized among the top 10 teams. The chatbot is designed to handle customer queries using natural language processing.
+                    </p>
+                    <a href="https://github.com/sachithakkadka/ai-chatbot" target="_blank" class="btn">View on GitHub</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h2>Personal Portfolio Website</h2>
+                    <p>
+                        Designed and developed a responsive personal portfolio website to showcase my skills, projects, and achievements using HTML, CSS, and JavaScript.
+                    </p>
+                    <a href="https://github.com/sachithakkadka/portfolio" target="_blank" class="btn">View on GitHub</a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <h2>Weather Image Detection Website</h2>
+                    <p>
+                        A weather forecasting application that provides real-time weather data for any location using an open weather API. Built with HTML, CSS, and JavaScript.
+                    </p>
+                    <a href="https://github.com/sachithakkadka/weather-app" target="_blank" class="btn">View on GitHub</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sachith Akkadka. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

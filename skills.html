@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>My Skills | Sachith Akkadka</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Body and Container Styling */
+        body {
+            background-color: #222222;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+        .nav-container {
+            display: flex;
+            margin-bottom: 0px;
+        }
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            gap: 0px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3;
+            border-radius: 2000px;
+        }
+        
+
+        /* Skills Section */
+        h1 {
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skills-column {
+            background-color: #444444;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skills-column:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .skills-column h2 {
+            margin-bottom: 15px;
+            color: #007bff;
+            text-align: center;
+        }
+
+        .skills-column ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .skills-column ul li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-container">
+        <ul class="nav-links">
+            <li><a href="index.html"><span class="material-icons">home</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Skills Section -->
+    <div class="container">
+        <h1>My Skills</h1>
+        <div class="skills-grid">
+            <!-- Technical Skills Column -->
+            <div class="skills-column">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python, C++, Java</li>
+                    <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React, Bootstrap</li>
+                    <li><strong>Back-end:</strong> Node.js, Express</li>
+                    <li><strong>Database:</strong> MySQL</li>
+                    <li><strong>Tools & Technologies:</strong> Git, GitHub, VS Code, PyCharm, Figma</li>
+                    <li><strong>Other Skills:</strong> Data Structures, Algorithms, Machine Learning Basics</li>
+                </ul>
+            </div>
+
+            <!-- Soft Skills & Other Talents Column -->
+            <div class="skills-column">
+                <h2>Soft Skills & Other Talents</h2>
+                <ul>
+                    <li><strong>Soft Skills:</strong></li>
+                    <li>Strong Communication & Leadership</li>
+                    <li>Problem-Solving & Analytical Thinking</li>
+                    <li>Team Collaboration</li>
+                    <br>
+                    <li><strong>Other Talents & Hobbies:</strong></li>
+                    <li>Content Writing & Kannada Poetry</li>
+                    <li>Public Speaking & Event Management</li>
+                    <li>Active Participation in College Events</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sachith Akkadka. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

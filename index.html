@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachith Akkadka's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Sachith Akkadka</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html"><b>Home</b></a></li>
+                        <li><a href="about.html"><b>About</b></a></li>
+                        <li><a href="projects.html"><b>Projects</b></a></li>
+                        <li><a href="skills.html"><b>Skills</b></a></li>
+                        <li><a href="resume.html"><b>Resume</b></a></li>
+                        <li><a href="contact.html"><b>Contact</b></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="sachith.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h3>Hi I'm a <span>CSE Student</span></h3>
+                    <h1 class="transition-text">Sachith Akkadka</h1>
+                    <p class="sachith"> Currently, I am a 3rd-year Computer Science and Engineering student at Vivekananda College of Engineering and Technology, Puttur. My academic journey has given me a strong foundation in programming and software development. I am passionate about applying my skills to real-world projects, particularly in areas like AI and data analytics, and have actively participated in hackathons and technical events to broaden my experience.
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="cv.pdf" class="btn" onclick="download">View CV</a>
+                       <a href="contact.html" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/sachith.akkadka/"><i class="fa-brands fa-facebook" style="font-size: 2.5em;"></i></a>
+                        <a href="http://www.linkedin.com/in/sachith-akkadka-246071258"><i class="fa-brands fa-linkedin" style="font-size: 2.5em;"></i></a>
+                        <a href="https://www.instagram.com/sachith_akkadka/"><i class="fa-brands fa-instagram" style="font-size: 2.5em;"></i></a>
+                        <a href="http://www.twitter.com/SAkkadka52412"><i class="fa-brands fa-twitter" style="font-size: 2.5em;"></i></a>
+                        <a href="http://www.github.com/sachith-akkadka"><i class="fa-brands fa-github" style="font-size: 2.5em;"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <footer>
+            &copy; 2024 Sachith Akkadka. All rights reserved.
+        </footer>
+     </div>
+     <!---typed js for typing text effect-->
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+     
+</body>
+</html>
